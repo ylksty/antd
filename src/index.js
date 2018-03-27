@@ -7,7 +7,7 @@ const app = dva({
     products: [
       { name: 'dva', id: 1 },
       { name: 'antd', id: 2 },
-    ],
+    ]
   }
 });
 
@@ -17,6 +17,7 @@ const app = dva({
 // 3. Model
 // app.model(require('./models/example').default);
 app.model(require('./models/products').default);
+app.model(require('./models/count').default);
 
 // 4. Router
 app.router(require('./router').default);
